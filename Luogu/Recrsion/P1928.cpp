@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int f(string s,int key)//time表示输出的次数
+int f(string s,int key)//time表示输出的次数,返回递归结束的地址
 {
     while(key<s.length()){
         if(s.at(key)=='[')
