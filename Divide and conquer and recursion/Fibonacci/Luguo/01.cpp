@@ -14,12 +14,14 @@ int main() {
                 f[i] = 0;
                 for (int j = 0; j < i; j++)
                 f[i] += f[j];
+                f[i]%=100003;
             }
             for (int i = k + 1; i <= n; i++) {
                 f[i] = 0;
                 for (int j = 1; j <= k; j++) {
                     f[i] += f[i - j];
                 }
+                f[i]%=100003;
             }
         }
        else {
@@ -27,6 +29,7 @@ int main() {
                 f[i] = 0;
                 for (int j = 0; j < i; j++)
                 f[i] += f[j];
+                f[i]%=100003;
             }
         }
     cout<<f[n];
